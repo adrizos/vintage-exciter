@@ -79,7 +79,7 @@ void VintageExciterAudioProcessorEditor::paint (Graphics& g)
     g.drawText("Range", 152, 350, 100, 100, Justification::centred, false);
     g.drawText("Blend", 15, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
     g.drawText("Volume", 154, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
-    g.drawText("Low-Pass2", 285, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
+    g.drawText("Low-Pass", 285, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
     
     //draw text for weather updates
     //    g.drawText("Current Weather in Seattle: 70F, Cloudy, 45% Percipitation", getWidth() / 95, ((getHeight() * 2.15) / 3) + 55, 395, 100, Justification::centred, false);
