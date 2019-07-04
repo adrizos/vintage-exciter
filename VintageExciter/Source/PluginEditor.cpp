@@ -16,7 +16,7 @@ VintageExciterAudioProcessorEditor::VintageExciterAudioProcessorEditor (VintageE
 : AudioProcessorEditor (&p), processor (p)
 {
     //custom image setup
-    backgroundImage = ImageCache::getFromMemory(Images::background5_png, Images::background5_pngSize);
+    backgroundImage = ImageCache::getFromMemory(Images::background6_png, Images::background6_pngSize);
     
     addAndMakeVisible(driveKnob = new Slider("Drive"));
     driveKnob->setSliderStyle(Slider::Rotary);
