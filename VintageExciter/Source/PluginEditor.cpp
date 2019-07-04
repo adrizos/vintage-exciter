@@ -74,17 +74,11 @@ void VintageExciterAudioProcessorEditor::paint (Graphics& g)
     
     g.setColour (Colours::white);
     g.setFont (15.0f);
-    //g.drawFittedText ("Hello World!", getLocalBounds(), Justification::centred, 1);
     g.drawText("Drive", 152, 200, 100, 100, Justification::centred, false);
     g.drawText("Range", 152, 350, 100, 100, Justification::centred, false);
     g.drawText("Blend", 15, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
     g.drawText("Volume", 154, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
     g.drawText("Low-Pass", 285, ((getHeight() * 2.15) / 3) + 115, 100, 75, Justification::centred, false);
-    
-    //draw text for weather updates
-    //    g.drawText("Current Weather in Seattle: 70F, Cloudy, 45% Percipitation", getWidth() / 95, ((getHeight() * 2.15) / 3) + 55, 395, 100, Justification::centred, false);
-    
-    
     
 }
 
@@ -93,20 +87,10 @@ void VintageExciterAudioProcessorEditor::resized()
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
     
-    //x,y,width,height
-    //    driveKnob->setBounds(((getWidth() / 5) * 1.5) - (100 /2), ((getHeight() * 2) / 5) - (100/2), 100, 100);
-    //    rangeKnob->setBounds(((getWidth() / 5) * 3.5) - (100 /2), ((getHeight() * 2) / 5) - (100 / 2), 100, 100);
-    //    blendKnob->setBounds(((getWidth() / 5) * 1.65) - (100 /2), ((getHeight() * 2.15) / 3) - (100 / 2), 75, 75);
-    //    volumeKnob->setBounds(((getWidth() / 5) * 2.65) - (100 /2), ((getHeight() * 2.15) / 3) - (100 / 2), 75, 75);
-    //    toneKnob->setBounds(((getWidth() / 5) * 3.65) - (100 /2), ((getHeight() * 2.15) / 3) - (100 / 2), 75, 75);
-    
     driveKnob->setBounds(152, 150, 100, 100);
     rangeKnob->setBounds(152,300 , 100, 100);
     
     blendKnob->setBounds(15, ((getHeight() * 2.15) / 2.5) - (100 / 2) + 55, 100, 75);
     volumeKnob->setBounds(149, ((getHeight() * 2.15) / 2.5) - (100 / 2) + 55, 100, 75);
     toneKnob->setBounds(285, ((getHeight() * 2.15) / 2.5) - (100 / 2) + 55, 100, 75);
-    
-    
-    
 }
