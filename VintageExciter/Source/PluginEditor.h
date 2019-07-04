@@ -49,6 +49,7 @@ private:
     Image background3;
     Image background4;
     Image background5;
+    Image background6;
     
     
     // This reference is provided as a quick way for your editor to
