@@ -7,3 +7,4 @@ This cross platform audio plugin is a general purpose saturation/clipping/gain t
   * Add mid boost toggle
   * Add URL link for support info
   * Add realtime meter GUI element
+  * Double check memory deallocation on close, what does JUCE handle?
