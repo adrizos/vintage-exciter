@@ -1,7 +1,7 @@
-![Alt Text](https://media.giphy.com/media/Up87xofJ0blY2VKL63/giphy.gif)
-
 # Vintage Exciter
 This cross platform audio plugin is a general purpose saturation/clipping/gain tool for keyboards/drums/guitars/bass and beyond. The project is developed in C++ with the Juce framework.
+
+![Alt Text](https://media.giphy.com/media/Up87xofJ0blY2VKL63/giphy.gif)
 
 * To Do
   * Add multi menu for high/low pass filters
