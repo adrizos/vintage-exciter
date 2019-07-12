@@ -180,6 +180,10 @@ void VintageExciterAudioProcessor::processBlock (AudioBuffer<float>& buffer, Mid
         //the buffer is an array of float values, the audio samples
         //this is just the audio data we're manipulating
         
+        //this variable is used to increment the x scaler in the artan function to increase the curve closer to a square wave
+        //the variable will start at 1 and go to 50 and then start over again
+        //between each whole number the variable will increment by .1 from x -> x + 1
+        int xScaler = 1;
         for (int sample = 0; sample < buffer.getNumSamples(); sample++){
             float cleanSig = *channelData; //clean signal before any distortion
             
@@ -188,9 +192,14 @@ void VintageExciterAudioProcessor::processBlock (AudioBuffer<float>& buffer, Mid
             
             //clip signal
             //amplify signal (get closer to 1, heavier distortion)
-            *channelData = (((((2.f/float_Pi) * atan(1.2 * *channelData)) * blend) + (cleanSig * (1.f - blend))) / 2.f) * volume;
+            *channelData = (((((2.f/float_Pi) * atan(xScaler * *channelData)) * blend) + (cleanSig * (1.f - blend))) / 2.f) * volume;
             
-            channelData++;
+            //increment until value hits 50 and then start back at 1
+            xScaler++;
+            if (xScaler == 50) {
+                xScaler = 1;
+            }
+            
         }
     }
 }
